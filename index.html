@@ -1,0 +1,92 @@
+<!-- 
+    Paste bootstrap starter template here
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Lesson 3 | forms</title>
+ </head>
+ <body>
+    <!-- container or container-fluid -->
+    <div class="container">
+        <h1>Forms</h1>
+        <!-- get shows info in url ( use for page search) - post doesnt ( for credentials )-->
+        <form action="welcome.html" method="get" autocomplete="" onsubmit="">
+
+            <label for="name">Name</label>
+            <br>
+            <!-- name must be linked with server -->
+            <input type="text" name="name" id="n1">
+            <br>
+            
+
+            <label for="password">Password</label>
+            <br><input type="password" name="password" id="pass" placeholder="Enter your password">
+            <br>
+
+            <label for="phone">Phone</label>
+            <br>
+            <input type="text" name="phone" id="p">
+            <br>
+
+            <label for="date">Date</label>
+            <br>
+            <input type="date" name="date" id="dat">
+            <br>
+
+            <label for="gender">Gender</label>
+            <br>
+            Male:<input type="radio" name="gender" id="gen">
+            Female:<input type="radio" name="gender" id="gen">
+            <br>
+
+            <label for="image">Upload Images</label>
+            <input type="file" name="image" id="im">
+
+            <label for="city">City</label>
+            <section>
+                <option value="">Tacoma</option>
+                <option value="">Seatle</option>
+                <option value="">Bellingham</option>
+            </section>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+             <!-- send button -->
+             <input class="btn btn-primary" type="submit" value="Send">
+
+        </form>
+        
+        <hr>
+
+        <h3>Audio</h3>
+        <audio src="<!-- if trust src put it here -->">
+            <!-- if not put here -->
+            <source src="media/music.mp3" type="audio/mp3">
+        </audio>
+
+        <hr>
+        <h3>Video</h3>
+        <style>
+        .von{
+            margin:0;
+            position: absolute;
+            z-index: -100;
+        }
+        </style>
+        <video controle autoplay loop play-inline class="von">
+            <source src="media/video.mp4" type="video/mp4">
+        </video>
+        <!-- make videa a header  -->
+
+
+    </div>
+     
+ </body>
+ </html>
